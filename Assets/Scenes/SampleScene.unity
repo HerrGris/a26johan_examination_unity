@@ -811,9 +811,9 @@ MonoBehaviour:
   textBox: {fileID: 750525356}
   nextButton: {fileID: 2137138930}
   dialogue:
-  - 'Bush: I''m Bush, who are you?'
-  - 'Mother: I''m your mother, Bush'
-  - 'Bush: Huh?'
+  - 'You: I''m Bush, who are you?'
+  - 'Npc: I''m your mother, Bush'
+  - 'You: Huh?'
   onStartDialogue:
     m_PersistentCalls:
       m_Calls:
