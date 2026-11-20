@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 173340414}
   - component: {fileID: 173340413}
   m_Layer: 0
-  m_Name: Bushly_PrincessSera_14
+  m_Name: Mother
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -283,7 +283,7 @@ Transform:
   m_GameObject: {fileID: 173340411}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.41, y: -2.89, z: 0}
+  m_LocalPosition: {x: -3.72, y: -2.88, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -404,7 +404,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1178022446974315716, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Wall Right
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalScale.y
@@ -412,11 +412,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.99
+      value: 10.55
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9832
+      value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -470,7 +470,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1178022446974315716, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Roof
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalScale.x
@@ -811,8 +811,8 @@ MonoBehaviour:
   textBox: {fileID: 750525356}
   nextButton: {fileID: 2137138930}
   dialogue:
-  - 'Bush: Who are you?'
-  - 'Princess: I''m your mother'
+  - 'Bush: I''m Bush, who are you?'
+  - 'Mother: I''m your mother, Bush'
   - 'Bush: Huh?'
   onStartDialogue:
     m_PersistentCalls:
@@ -922,7 +922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -574, y: -75}
+  m_AnchoredPosition: {x: -297, y: -146}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &750525356
@@ -947,8 +947,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3c152dfdc3447f944a505d2fbf45852a, type: 2}
-  m_sharedMaterial: {fileID: 4318836625900630786, guid: 3c152dfdc3447f944a505d2fbf45852a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1038,7 +1038,7 @@ GameObject:
   - component: {fileID: 934318549}
   - component: {fileID: 934318548}
   m_Layer: 5
-  m_Name: Scene Button
+  m_Name: Main Scene Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1137,7 +1137,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1178022446974315716, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Float Right Platform
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalScale.x
@@ -1183,11 +1183,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2518114443878919671, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1178022446974315716, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1048035515}
   m_SourcePrefab: {fileID: 100100000, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
+--- !u!1 &1048035512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1178022446974315716, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
+  m_PrefabInstance: {fileID: 961107215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!251 &1048035515
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048035512}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1156901759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,7 +1232,7 @@ GameObject:
   - component: {fileID: 1156901762}
   - component: {fileID: 1156901761}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Change Scene Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1249,7 +1280,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0, g: 0.05781889, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1380,8 +1411,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Next
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3c152dfdc3447f944a505d2fbf45852a, type: 2}
-  m_sharedMaterial: {fileID: 4318836625900630786, guid: 3c152dfdc3447f944a505d2fbf45852a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1471,7 +1502,7 @@ GameObject:
   - component: {fileID: 1173840687}
   - component: {fileID: 1173840686}
   m_Layer: 5
-  m_Name: Dialogue
+  m_Name: Dialogue Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1598,7 +1629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -394, y: -115}
+  m_AnchoredPosition: {x: -484.99994, y: -94.99999}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1195881532
@@ -1754,8 +1785,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3c152dfdc3447f944a505d2fbf45852a, type: 2}
-  m_sharedMaterial: {fileID: 4318836625900630786, guid: 3c152dfdc3447f944a505d2fbf45852a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1842,7 +1873,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1178022446974315716, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Wall Left
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalScale.y
@@ -1850,11 +1881,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.3
+      value: -12.03
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1907,7 +1938,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f9b78886f9201a84586215ef3751c9e0, type: 2}
     - target: {fileID: 1178022446974315716, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Red Material Box
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalScale.x
@@ -1990,7 +2021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178022446974315716, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Float Function
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalScale.x
@@ -2195,7 +2226,7 @@ GameObject:
   - component: {fileID: 1738330099}
   - component: {fileID: 1738330104}
   m_Layer: 0
-  m_Name: Bushly_PrincessSera_0
+  m_Name: Bush
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7345,7 +7376,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075990423}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 709.8695, y: 230.6812, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7444,7 +7475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -393.99997, y: -145}
+  m_AnchoredPosition: {x: -485, y: -125}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2137138930
@@ -7539,7 +7570,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1178022446974315716, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 2473877790735656816, guid: eed02fae625e0404cb033002fffa11e8, type: 3}
       propertyPath: m_LocalScale.x
@@ -7600,7 +7631,7 @@ SceneRoots:
   - {fileID: 696012678}
   - {fileID: 1684945154}
   - {fileID: 617857501}
-  - {fileID: 1699353916}
-  - {fileID: 1872084723}
   - {fileID: 934318551}
   - {fileID: 2075990425}
+  - {fileID: 1699353916}
+  - {fileID: 1872084723}
